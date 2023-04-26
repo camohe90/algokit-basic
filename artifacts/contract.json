@@ -1,0 +1,88 @@
+{
+    "name": "Calculator",
+    "methods": [
+        {
+            "name": "hello",
+            "args": [
+                {
+                    "type": "string",
+                    "name": "name"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "suma",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "numero1"
+                },
+                {
+                    "type": "uint64",
+                    "name": "numero2"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "division",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "numero1"
+                },
+                {
+                    "type": "uint64",
+                    "name": "numero2"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "validar_Edad",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "edad"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "validar_Edad_If",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "edad"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "leer_Edad",
+            "args": [],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "leer_resultado",
+            "args": [],
+            "returns": {
+                "type": "uint64"
+            }
+        }
+    ],
+    "networks": {}
+}
