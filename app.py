@@ -24,6 +24,20 @@ def suma (numero1: abi.Uint64, numero2: abi.Uint64, *, output: abi.Uint64) -> Ex
     )
 
 @app.external
+def resta (numero1: abi.Uint64, numero2: abi.Uint64, *, output: abi.Uint64) -> Expr:
+    return Seq(
+        output.set(numero1.get()+ numero2.get()),
+        app.state.total.set(numero1.get() - numero2.get())
+    )
+
+@app.external
+def multiplicacion (numero1: abi.Uint64, numero2: abi.Uint64, *, output: abi.Uint64) -> Expr:
+    return Seq(
+        output.set(numero1.get()+ numero2.get()),
+        app.state.total.set(numero1.get() * numero2.get())
+    )
+
+@app.external
 def division (numero1: abi.Uint64, numero2: abi.Uint64, *, output: abi.Uint64) -> Expr:
      return Seq(
         Assert(
